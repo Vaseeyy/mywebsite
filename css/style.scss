@@ -1,0 +1,159 @@
+.body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  animation: fade-in-right 500ms forwards;
+}
+
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+ 
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+ul li {
+  display: inline;
+}
+
+
+ul li a {
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+}
+
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+
+ul {
+  text-align: center;
+}
+
+
+header {
+  background-image: url("https://wallup.net/wp-content/uploads/2016/01/174118-space-stars-planet-horizon.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+}
+
+
+article {
+  color: white;
+}
+
+
+footer {
+  text-align: center;
+  color: white;
+  position: bottom fixed;
+  display: left inline;
+}
+
+
+input {
+  text-align: center;
+}
+
+
+.border {
+  border: white double;
+  margin: 1%;
+  padding: 5px;
+}
+
+
+.border2 {
+  border: double white;
+  margin: 1%;
+  padding: 5px;
+}
+
+
+.footer {
+  background-image: url("https://i.ytimg.com/vi/lzwd5IdLAWw/maxresdefault.jpg");
+}
+
+
+.grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: left;
+  min-height: 45vh;
+}
+
+
+img {
+  width: 50px;
+  height: auto;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+
+@media (max-width: 750px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  ul li a {
+    border: none;
+  }
+}
+
+
+.focus {
+  border-color: #fff !important;
+  transition: all 0.5s ease-out;
+}
+
+.focus::placeholder {
+  font-style: italic;
+  font-variant: small-caps;
+  color: black;
+}
+
+.focus:focus {
+  border-color: white !important;
+  transition: all 0.5s ease-out;
+}
+
+
+.link {
+  font-size: 1.2rem;
+  transition: white 0.9s ease-out, font-size 0.3s ease-out;
+  text-decoration: none;
+}
+
+.link > span {
+  font-size: 1.5rem;
+}
+
+
+.link:hover {
+  transition: white 0.9s ease-out, font-size 0.3s ease-out;
+  font-size: 1.5rem;
+}
