@@ -5,8 +5,8 @@
 }
 
 .light-mode {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: white;
+  color: black;
 }
 
 @keyframes fade-in-right {
