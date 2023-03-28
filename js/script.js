@@ -1,4 +1,17 @@
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("light-mode");
+const body = document.querySelector("body");
+
+const modeToggle = document.getElementById('mode-toggle');
+
+const modeStatus = document.querySelector('.mode-status');
+
+function toggleMode() {
+   body.classlist.toggle('light-mode');
+
+const modeMessage = body.classList.contains('light-mode')
+   'Dark-Mode'
+   : "Light-Mode"
+   
+modeStatus.innerText = "Currently in " + modeMessage;
 }
+
+modeToggle.addEventListener('click', toggleMode);
