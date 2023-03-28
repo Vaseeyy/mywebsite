@@ -4,6 +4,11 @@
   animation: fade-in-right 500ms forwards;
 }
 
+.light-mode {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
 @keyframes fade-in-right {
   0% {
     transform: translateX(-10%);
