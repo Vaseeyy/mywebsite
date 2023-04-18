@@ -1,108 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  </head>
-  <body class="body">
-
-
-    <header class="header" id="a">
-      <section>
-      <h1>Karl Vasey: About Me!
-        <input type="checkbox" id="switch" class="checkbox">
-        <label for="switch" class="toggle" onclick="myFunction()">
-        </label>
-        </h1>
-      <nav>
-        
-         <ul>
-          <li><a href="#About" class="link">About</a></li>
-          <li><a href="#Links" class="link">Links</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- MDB -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Issue Logger</title>
+</head>
+<body>
+  
+  <header id="header2" class="header2 container">
+    <div class="brand">
+      <div class="brand__name">
+        <h1>issueLogger</h1>
+      </div>
+    </div>
+    <div class="header-btns">
+      <button class="btn btn-secondary clear-issues-btn">Clear Issue Log</button>
+      <button class="btn new-issue-btn" data-mdb-toggle="modal" data-mdb-target="#newIssueModal"><span>+</span> Track New Issue</button>
+      </label>
+    </div>
+    <ul>
+          <li><a href="./home.html" class="link">Home</a></li>
+          <li><a href="./issuelogger.html" class="link">Issue Logger</a></li>
           <li><a href="#Journey" class="link">My Journey</a></li>
           <li><a href="#Contact" class="link">Contact Me</a></li>
         </ul>
-      </nav>
+  </header>
+  <main class="fullpage container main">
+    <section class="team-members">
+      <h1>TEAM MEMBERS</h1>
+      <article id="team-members__list" class="team-members__list">
+        <div class="team-member__details">
+          <img 
+            src="" 
+            class="avatar rounded-circle mb-3 shadow-4-strong"
+            alt="Avatar"
+          />
+          <h5 class="mb-2"></h5>
+          <p class="text-muted issues-detail">
+            <span class="badge issues-number">0</span>
+            <span>Assigned</span>
+          </p>
+        </div>
         
-    </header>
-
-    <article>
-      <section id="intro" class="border2">
-        <p>
-          The aim of this website is to inform those visiting about myself, and anything pertaining to me personally.
-        </p>
-        <p>
-          I am a 26-year-old male who lives in the United Kingdom. The reason I have created this website is due to the fact that I am currently enrolled in a Software Development course through <a href="https://www.correlation-one.com/"><b>Correlation One</b></a> and as part of this course we are to create our own "Landing Page".
-        </p>
-      </section>
-      <main class="grid">
-        <div class="col border">
-          <section id="#About">
-            <h2><u>About me</u></h2>
-              <p>As mentioned above, I am a 26-year-old male who lives in the UK, more specifically the North-East of england, who is studying to become a Software Developer. I hope to be able to enter the Software Development field after having completed this course, as I enjoy working with computers and feel like I can be quite successful in this career.
-              </p>
-              <p>
-                For those wanting to contact me, my personal Facebook Profile can be found <a href="https://www.facebook.com/karl.vasey.9" style="color:white"><b>here</b></a>.
-              </p>
-          </section>
-        </div>
-
-
-        <div class="col border">
-          <section id="#Links">
-            <h2><u>Useful Links</u></h2>
-            <p>The links along the Horizontal Sidebar at the top of the page will lead you to various sections. The Home button will lead you straight back to this page.
-            </p>
-            <p>The News button will take you to a page where I will post updates about myself and my life, such as major milestones and/or achievements.
-            </p>
-            <p>Finally, the About button will take you directly to a page where there is more detail about me specifically.
-            </p>
-          </section>
-        </div>
-
-
-        <div class="col border">
-          <section id="#Journey" >
-            <h2><u>My Coding journey so far!</u></h2>
-            <p>
-              I am thoroughly enjoying the course so far, there is a lot of information to take in but thankfully there are plenty of resources available for us to use that will help us out!
-            </p>
-            <p>
-              So far, we have learned how to embed images and links into our webpages, how to change the background colour and text on our pages, how to creat tables and forms, and a bunch of other interesting things! The part I have found most interesting so far is implementing image maps to be able to embed links into images, which I have used to link my facebook below!
-            </p>
-            <p>
-              One of my friends is also currently learning how to code, unfortunately he is not learning through Correlation One like I am. This does, however, allow us to reference eachother's notes and see if there is any difference between how we are both learning, and help eachother out if either of us are struggling with anything in particular.
-            </p>
-          </section>
-        </div>
-    </article>
-
- 
-    <footer>
-      <div class="footer">
-      <section id="Contact">
-      <h2>Contact Me</h2>
-      <form class="form" action="/example.php" method="get">
-      <p>First name:
-       <input type="text" name="fname" id="fname" class="focus"></p>
-      <p>Last name:
-        <input type="text" name="lname" id="lname" class="focus"></p>
-      <p>Email address:
-        <input type="text" name="email" id="email" class="focus"></p>
-      <p>Telephone number:
-       <input type="number" name="number" id="number" class="focus">
-      <p><input type="submit" value="Save"></p>
-      </form>
+      </article>
+    </section>
+    <section class="active-issues">
+      <div class="active-issues__heading">
+        <h1>ACTIVE ISSUES</h1>
       </div>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf1rTmxseVqHICL38DE-VzU6z0e-mM2UBn_A&usqp=CAU" usemap="#image_map">
-      <map name="image_map">
-        <area alt="" title="" href="https://www.facebook.com/karl.vasey.9" coords="10,20,214,225" shape="rect" target="_blank">
-      </map>
-    </footer>
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="./js/script.js"></script>
-  </body>
+      <article id="active-issues__list" class="active-issues__list">
+        <div id="no-issues-msg" class="no-issues-msg">
+          <h2>No active issues at the moment.</h2>
+          <h2>All systems "go"!</h2>
+        </div>
+      </article>
+    </section>
+  </main>
+  <div class="modal fade" id="newIssueModal" tabindex="-1" aria-labelledby="newIssueModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-3" id="newIssueModalLabel">Track a new issue</h1>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="add-issues-form" class="add-issues-form" novalidate>
+            <div class="form-item-wrapper">
+              <div class="form-item">
+                <div class="form-outline">
+                  <input type="text" id="issue-summary" class="form-control form-control-lg" required/>
+                  <label class="form-label" for="issue-summary">Issue Summary</label>
+                </div>
+              </div>
+              <small class="feedback">Required</small>
+            </div>
+
+            <div class="form-item-wrapper">
+              <div class="form-item">
+                <div class="form-outline">
+                  <textarea id="issue-description" class="form-control form-control-lg" required></textarea>
+                  <label class="form-label" for="issue-description">Issue description</label>
+                </div>
+              </div>
+              <small class="feedback">Required</small>
+            </div>
+
+            <div class="form-item-wrapper">
+              <div class="form-item">
+                <div class="form-floating">
+                  <select id="assign-to" class="form-select" aria-label="Select team member" required>
+                    <option value="" selected>Select team member</option>
+                  </select>
+                  <label for="assign-to" class="text-muted">Assign to:</label>
+                </div>
+              </div>
+              <small class="feedback">Required</small>
+            </div>
+
+            <div class="form-item-wrapper">
+              <div class="form-item">
+                <div class="form-floating">
+                  <select id="issue-priority" class="form-select" aria-label="Select issue priority" required>
+                    <option value="" selected>Select issue priority</option>
+                    <option value="Low" >Low</option>
+                    <option value="Medium" >Medium</option>
+                    <option value="High" >High</option>
+                    <option value="Critical" >Critical</option>
+                  </select>
+                  <label for="issue-priority" class="text-muted">Priority:</label>
+                </div>
+              </div>
+              <small class="feedback">Required</small>
+            </div>
+
+            <div class="form-item-wrapper">
+              <div class="form-item">
+                <div class="form-floating">
+                  <select id="issue-status" class="form-select" aria-label="Select issue status" required>
+                    <option value="" selected>Select issue status</option>
+                    <option value="New" >New</option>
+                    <option value="In Progress" >In Progress</option>
+                    <option value="Resolved" >Resolved</option>
+                    <option value="Closed" >Closed</option>
+                  </select>
+                  <label for="issue-status" class="text-muted">Status:</label>
+                </div>
+              </div>
+              <small class="feedback">Required</small>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-item">
+                  <div class="form-outline">
+                    <input type="date" id="date-assigned" class="form-control form-control-lg" required />
+                    <label class="form-label" for="date-assigned">Date assigned</label>
+                  </div>
+                </div>
+                <small class="feedback">Required</small>
+              </div>
+              <div class="col-md-6">
+                <div class="form-item">
+                  <div class="form-outline">
+                    <input type="date" id="due-date" class="form-control form-control-lg" required />
+                    <label class="form-label" for="due-date">Due date</label>
+                  </div>
+                </div>
+                <small class="feedback">Required</small>
+              </div>
+            </div>
+            <div class="row form-submit-control">
+              <div class="col-md-6">
+                <button type="button" class="btn btn-secondary modal-close" data-mdb-dismiss="modal">Close</button>
+              </div>
+              <div class="col-md-6">
+                <button id="modal-save-changes" type="submit" class="btn modal-save-changes" data-mdb-dismiss="modal" disabled>Save changes</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="footer container">
+    <div class="footer__content">
+      &copy; 2023 IssueLogger. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@2.4.1/dist/purify.min.js"></script>
+  <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+  <!-- MDB -->
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+  ></script>
+  <script type="module" src="./main.js"></script>
+</body>
 </html>
