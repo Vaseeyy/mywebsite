@@ -1,7 +1,7 @@
 .body {
-  background-color: black;
   font-family: "Roboto", sans-serif;
   animation: fade-in-right 500ms forwards;
+  background-color: #ebebeb;
 }
 
 @keyframes fade-in-right {
@@ -50,14 +50,13 @@ header {
 }
 
 article {
-  color: white;
 }
 
 footer {
   text-align: center;
-  color: white;
   position: bottom fixed;
   display: left inline;
+  background-color: black;
 }
 
 input {
@@ -65,19 +64,28 @@ input {
 }
 
 .border {
-  border: white double;
+  border: double;
   margin: 1%;
   padding: 5px;
 }
 
 .border2 {
-  border: double white;
+  border: double;
   margin: 1%;
   padding: 5px;
 }
 
 .footer {
+  background-color: black;
   background-image: url("https://i.ytimg.com/vi/lzwd5IdLAWw/maxresdefault.jpg");
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.form {
+  color: white;
 }
 
 .grid {
@@ -113,7 +121,7 @@ h2 {
 .focus::placeholder {
   font-style: italic;
   font-variant: small-caps;
-  color: black;
+  /* color: black; */
 }
 
 .focus:focus {
@@ -123,7 +131,7 @@ h2 {
 
 .link {
   font-size: 1.2rem;
-  transition: white 0.9s ease-out, font-size 0.3s ease-out;
+  transition: black 0.9s ease-out, font-size 0.3s ease-out;
   text-decoration: none;
 }
 
@@ -132,6 +140,66 @@ h2 {
 }
 
 .link:hover {
-  transition: white 0.9s ease-out, font-size 0.3s ease-out;
+  transition: black 0.9s ease-out, font-size 0.3s ease-out;
   font-size: 1.5rem;
+}
+
+/* new slider toggle for dark mode */
+
+.toggle {
+  position : relative ;
+  display : inline-block;
+  width : 50px;
+  height : 35px;
+  background-color: black;
+  border-radius: 30px;
+  border: 2px solid gray;
+}
+               
+       
+.toggle:after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  top: 1px;
+  left: 1px;
+  transition:  all 0.5s;
+}
+               
+        
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+               
+       
+.checkbox:checked + .toggle::after {
+  left : 16px;
+}
+               
+        
+.checkbox:checked + .toggle {
+   background-color: white
+}
+         
+       
+.checkbox {
+  display : none;
+}
+
+.dark {
+  background-color: #050505;
+  color: white;
+  animation: fadeBackground 1s;
+  animation-fill-mode: none;
+}
+
+@keyframes fadeBackground {
+  from { background-color: #ebebeb; }
+  to { background-color: #050505; }
+  from { color: black; } 
+  to {color: white; }
 }
