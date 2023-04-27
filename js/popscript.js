@@ -79,3 +79,4 @@ svg.append('g')
 // jQuery for Project 12
 $("body").css("background-color", "yellow");
 $("#div2").prepend("<h2>This was added using jQuery</h2>");
+$("body").prepend("<nav><ul><li><a href="./index.html" class="link">Home</a></li><li><a href="./countrypop.html" class="link">Population Bar Chart</a></li></ul></nav>");
