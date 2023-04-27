@@ -77,3 +77,4 @@ svg.append('g')
   .call(d3.axisLeft(y));
 
 
+$("#div2").append("<h2>This is appended to the div</h2>");
