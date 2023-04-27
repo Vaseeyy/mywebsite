@@ -78,4 +78,4 @@ svg.append('g')
 
 // jQuery for Project 12
 $("body").css("background-color", "yellow");
-$("#div2").prepend("<h2>This is a prepend to the div</h2>");
+$("#div2").prepend("<h2>This was added using jQuery</h2>");
