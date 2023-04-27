@@ -50,3 +50,23 @@ h3 {
   width: 50px;
   margin: 0 5px;
 }
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a {
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+}
+
