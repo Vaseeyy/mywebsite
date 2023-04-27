@@ -76,5 +76,6 @@ svg.append('g')
 svg.append('g')
   .call(d3.axisLeft(y));
 
-
+// jQuery for Project 12
+$("body").css("background-color", "yellow");
 $("#div2").prepend("<h2>This is a prepend to the div</h2>");
