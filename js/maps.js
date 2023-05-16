@@ -9,7 +9,7 @@ function initMap() {
     directionsService = new google.maps.DirectionsService();
     directionsRenderer = new google.maps.DirectionsRenderer();
     // Initial map location (Amazon NCL1)
-    const coordinates = { lat: 37.422040, lng: -122.082810 };
+    const coordinates = { lat: 54.935471, lng: -1.517610 };
 
     map = new google.maps.Map(document.getElementById("map"), {
         zoom: 13,
