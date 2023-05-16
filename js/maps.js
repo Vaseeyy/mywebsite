@@ -2,11 +2,13 @@ var geocoder;
 var map;
 var directionsService;
 var directionsRenderer;
-       
+// Initialising the Map
 function initMap() {
     geocoder = new google.maps.Geocoder();
+    // Directions
     directionsService = new google.maps.DirectionsService();
     directionsRenderer = new google.maps.DirectionsRenderer();
+    // Initial map location (Amazon NCL1)
     const coordinates = { lat: 37.422040, lng: -122.082810 };
 
     map = new google.maps.Map(document.getElementById("map"), {
@@ -15,6 +17,7 @@ function initMap() {
     });
     directionsRenderer.setMap(map);
 }
+// Search Function
 function getCoordinates() {
     var address = document.getElementById('address').value;
     geocoder.geocode({ 'address': address }, function (results, status) {
@@ -29,6 +32,7 @@ function getCoordinates() {
         }
     });
 }
+// Set route
 function calcRoute() {
     var start = document.getElementById('origin').value;
     var end = document.getElementById('destination').value;
