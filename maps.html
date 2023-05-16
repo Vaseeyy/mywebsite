@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+<link rel="stylesheet" href="./css/maps.css">
     <title>Google Maps</title>
 
 </head>
@@ -11,14 +11,14 @@
   <div id="map" style="width: 600px; height: 400px;"></div>
     <div>
         <input id="address" type="textbox">
-        <input type="button" value="Search Address" onclick="getCoordinates()">
+        <input id="btn" type="button" value="Search Address" onclick="getCoordinates()">
     </div>
     <div>
       <label>Origin</label>
         <input id="origin" type="textbox">
       <label>Destination</label>
         <input id="destination" type="textbox">
-        <input type="button" value="Search Route" onclick="calcRoute()">
+        <input id="btn" type="button" value="Search Route" onclick="calcRoute()">
     </div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMTVcH-Vl6sDMZ-5x7Yt57zUcleqgHKrQ&callback=initMap&v=weekly"
       defer></script>
